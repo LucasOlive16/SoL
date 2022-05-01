@@ -1,0 +1,42 @@
+using System;
+using System.Globalization;
+
+namespace Primeiro
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int N = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < N; i++)
+            {
+               string[] vet = Console.ReadLine().Split(" ");
+               double a = double.Parse(vet[0], CultureInfo.InvariantCulture);
+               double b = double.Parse(vet[1], CultureInfo.InvariantCulture);
+               double c = double.Parse(vet[2], CultureInfo.InvariantCulture);
+               
+                if (i == 1)
+                {
+                    double resultado = (a * 2) + (b * 3) + (c * 5);
+                    resultado = resultado / 10;
+                    Console.WriteLine(resultado.ToString("F1", CultureInfo.InvariantCulture));
+                }
+                else if (i == 2)
+                {
+                    double resultado = (a * 2) + (b * 3) + (c * 5);
+                    resultado = resultado / 10;
+                    Console.WriteLine(resultado.ToString("F1", CultureInfo.InvariantCulture));
+                }
+                else
+                {
+                    double resultado = (a * 2) + (b * 3) + (c * 5);
+                    resultado = resultado / 10;
+                    Console.WriteLine(resultado.ToString("F1", CultureInfo.InvariantCulture));
+                }
+            }
+
+        }
+    }
+}
